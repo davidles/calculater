@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <h1>Calculator</h1>
+
+    </header>
+    <main>
+        <div class="calculadora">
+            <input type="text" id="pantalla" readonly>
+            <div class="line-button">
+                <input type="button" value="(" onclick="addNumber(value)">
+                <input type="button" value=")" onclick="addNumber(value)">
+                <input type="button" value="%" onclick="addSymbol(value)">
+                <input type="button" value="AC" onclick="reset()">
+            </div>
+    
+            <div class="line-button">
+                <input type="button" value="7" onclick="addNumber(value)">
+                <input type="button" value="8" onclick="addNumber(value)">
+                <input type="button" value="9" onclick="addNumber(value)">
+                <input type="button" value="/" onclick="addSymbol(value)">
+            </div>
+            <div class="line-button">
+                <input type="button" value="4" onclick="addNumber(value)">
+                <input type="button" value="5" onclick="addNumber(value)">
+                <input type="button" value="6" onclick="addNumber(value)">
+                <input type="button" value="*" onclick="addSymbol(value)">
+    
+            </div>
+            <div class="line-button">
+                <input type="button" value="1" onclick="addNumber(value)">
+                <input type="button" value="2" onclick="addNumber(value)">
+                <input type="button" value="3" onclick="addNumber(value)">
+                <input type="button" value="-" onclick="addSymbol(value)">
+    
+            </div>
+    
+            <div class="line-button">
+                <input type="button" value="0" onclick="addNumber(value)">
+                <input type="button" value="." onclick="addNumber(value)">
+                <input type="button" value="=" onclick="calculate()">
+                <input type="button" value="+" onclick="addSymbol(value)">
+    
+            </div>
+        </div>
+    </main>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
